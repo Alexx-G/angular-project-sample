@@ -12,5 +12,8 @@
     "example"
   ],
   "author": "Alex <alexandr@gavrisco.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "~3.8.10"
+  }
 }
