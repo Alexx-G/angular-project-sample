@@ -1,0 +1,23 @@
+{
+  "name": "angular-project-sample",
+  "version": "0.0.1",
+  "authors": [
+    "Alex <alexandr@gavrisco.com>"
+  ],
+  "description": "This is a simple example of AngularJS project with minimal setup.",
+  "keywords": [
+    "angularjs",
+    "example",
+    "tutorial",
+    "sample"
+  ],
+  "license": "MIT",
+  "homepage": "gavrisco.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
