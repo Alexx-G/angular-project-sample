@@ -57,3 +57,17 @@ For installation of components that we needed, we'll use bower.
        <script type="text/javascript" src="../../bower_components/angular/angular.min.js"></script>
 
        Bower allows to easily manage dependencies of your project.
+
+Automating the build of project sources.
++++++++++++++++++++++++++++++++++++++++++
+
+Why do we need to use `gulp <http://gulpjs.com/>`_ (or grunt)?
+
+Well, because it's awesome. We can once configure what files we want to minify (concatenate, optimize) and use them in production. I use gulp for:
+
+1. Concatenation, minification of js files.
+2. Same as above for css files.
+3. Collecting of html files from app (preserving the project structure), and copying them to the release directory.
+
+After running a single *gulp* task I obtain release folder with my views, scripts and styles.
+You can find gulpfile in this repository (it's very simple) or check the documentation.
