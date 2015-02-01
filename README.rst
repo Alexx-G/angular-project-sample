@@ -1,10 +1,11 @@
+==========================================
 Example of AngularJS project structure.
------------------------------------------
+==========================================
 
 When I started with AngularJS, one of the principal question for me was - "How should I structure my project?". So, after more tries I found the best project layout for me.
 
 Set-up of environment.
-=======================
++++++++++++++++++++++++
 
 0. You'll need `node <http://nodejs.org/>`_ and `npm <https://www.npmjs.com/>`_.
    Install globally gulp and bower via npm.
@@ -36,5 +37,23 @@ Creating the structure of project.
 
 3. By default bower will create a folder in your project named bower_components for installed packages.
    But you can create a **.bowerrc** file and specify another folder.
-   
+
    {"directory": "bower_components/"}
+
+
+Installing required components.
+++++++++++++++++++++++++++++++++
+
+For installation of components that we needed, we'll use bower.
+
+    1. Just execute next command.
+    
+       `bower install --save angular`
+
+       *--save* option will add this component as dependency to the bower.json file.
+
+    2. Now you can include files from the installed component into your project. E.g.
+       
+       <script type="text/javascript" src="../../bower_components/angular/angular.min.js"></script>
+
+       Bower allows to easily manage dependencies of your project.
