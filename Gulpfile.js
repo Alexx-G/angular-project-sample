@@ -9,11 +9,13 @@ var appSrcPath = "src/app/",
     distPath = "dist/";
 
 gulp.task('app-js', function() {
-    gulp.src(appJSsources)
+    gulp.src([appSrcPath + "**/*.module.js", appSrcPath + "**/*.js"])
 	.pipe(sourcemaps.init())
         .pipe(concat('app.bundle.min.js'))
         .pipe(ngAnnotate())
         .pipe(uglify())
-	.pipe(sourcemaps.write())
-        .pipe(gulp.dest(dPath + 'js/'))
+    .pipe(sourcemaps.write('maps/'))
+    .pipe(gulp.dest(distPath + 'js/'));
 });
+
+gulp.task('build', ['app-js']);
