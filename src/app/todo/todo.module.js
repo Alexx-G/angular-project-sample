@@ -1,3 +1,3 @@
 (function() {
-	angular.module("app.todo", ["app.todo.controllers", "app.todo.factories"]);
+    angular.module("app.todo", ["app.todo.controllers", "app.todo.factories"]);
 })();

@@ -1,109 +1,109 @@
 /* Main styles for project goes here */
 body {
-	background-color: #e8eaf6;
-	font-family: RobotoDraft,Roboto,"Helvetica Neue",sans-serif;
+    background-color: #e8eaf6;
+    font-family: RobotoDraft,Roboto,"Helvetica Neue",sans-serif;
 }
 
 .invert {
-	color: white;
+    color: white;
 }
 
 .medium-shadow {
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.29);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.29);
 }
 
 .high-shadow {
-	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
 }
 
 .td-container {
-	background-color:  #5c6bc0;
-	color: white;
-	margin: 20px auto;
-	height: auto;
-	width: 500px;
-	padding: 10px;
+    background-color:  #5c6bc0;
+    color: white;
+    margin: 20px auto;
+    height: auto;
+    width: 500px;
+    padding: 10px;
 }
 
 .td-container h1 {
-	margin: 5px 0;
+    margin: 5px 0;
 }
 
 .td-list-container {
-	border-width: 1px 0 0;
-	border-style: solid none none;
-	border-color: rgba(26, 35, 126, 0.3);
-	padding: 10px 0;
+    border-width: 1px 0 0;
+    border-style: solid none none;
+    border-color: rgba(26, 35, 126, 0.3);
+    padding: 10px 0;
 }
 
 .td-controls {
-	box-sizing: border-box;
-	width: 100%;
-	padding: 0 10px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 10px;
 }
 
 .td-controls input {
-	width: 100%;
-	font-size: 100%;
+    width: 100%;
+    font-size: 100%;
 }
 
 .td-form-container {
-	align-items: baseline;
-	display: flex;
-	justify-content: space-between;
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
 }
 
 .td-button {
-	border: none;
-	background-color: #283593;
-	padding: 6px;
-	color: white;
+    border: none;
+    background-color: #283593;
+    padding: 6px;
+    color: white;
 }
 
 .td-button:hover {
-	background-color: #1a237e;
+    background-color: #1a237e;
 }
 
 .td-input:focus {
-	border-color: #e8eaf6;
+    border-color: #e8eaf6;
 }
 
 .td-input {
-	border-color: #1a237e;
-	border-radius: 0;
-	border-width: 0 0 1px;
-	background-color: transparent;
+    border-color: #1a237e;
+    border-radius: 0;
+    border-width: 0 0 1px;
+    background-color: transparent;
 }
 
 .td-validation-container {
-	display: block;
-	padding-top: 10px;
+    display: block;
+    padding-top: 10px;
 }
 
 .td-validation-message {
-	background-color: #f44336;
-	padding: 10px;
+    background-color: #f44336;
+    padding: 10px;
 }
 
 .td-list {
-	list-style: none;
-	padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .td-item-container {
-	padding: 5px 10px 5px;
-	margin-top: 10px;
-	background-color: #e8eaf6; 
-	color: black;
-	align-items: baseline;
-	display: flex;
-	justify-content: space-between;
+    padding: 5px 10px 5px;
+    margin-top: 10px;
+    background-color: #e8eaf6; 
+    color: black;
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
 }
 
 .td-item-container > span {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .strike {
-	text-decoration: line-through;
+    text-decoration: line-through;
 }
