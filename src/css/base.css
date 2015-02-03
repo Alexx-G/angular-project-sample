@@ -95,6 +95,13 @@ body {
 	margin-top: 10px;
 	background-color: #e8eaf6; 
 	color: black;
+	align-items: baseline;
+	display: flex;
+	justify-content: space-between;
+}
+
+.td-item-container > span {
+	overflow: hidden;
 }
 
 .strike {

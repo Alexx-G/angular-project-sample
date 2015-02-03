@@ -12,7 +12,7 @@
 			todoList.push(new Todo(name));
 		}
 		var removeTodo = function(todoIndex) {
-			todoList.splice(todoIndex);
+			todoList.splice(todoIndex, 1);
 		}
 		return {
 			addTodo: addTodo,
