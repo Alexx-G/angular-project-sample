@@ -15,6 +15,7 @@
 			}
 		};
 		self.removeTodo = function(taskId) {
+			$log.info(taskId);
 			todoFactory.removeTodo(taskId);
 		};
 	}

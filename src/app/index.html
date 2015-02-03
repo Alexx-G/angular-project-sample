@@ -5,20 +5,32 @@
 	<link rel="stylesheet" type="text/css" href="../css/styles.min.css"/>
 </head>
 <body ng-app="MainApp">
-<div class="td-container">
+<div class="td-container medium-shadow">
 	<h1>TODO</h1>
 	<div class="td-list-container" ng-controller="TodoCtrl as todo">
 		<form name="todoForm" class="td-list-form" novalidate ng-submit="todo.addTodo()">
-			<label>New todo</label>
-			<input required ng-model-options="{updateOn: 'blur'}" type="text" ng-model="todo.todoName" name="todoName"/>
-			<button type="submit">Add</button>
+			<div class='td-form-container'>
+				<label for="todoName">New</label>
+				<div class="td-controls">
+					<input class="invert td-input" required ng-model-options="{updateOn: 'blur'}" type="text" ng-model="todo.todoName" name="todoName" id="todoName"/>
+				</div>
+				<button type="submit" class="td-button medium-shadow">Add</button>
+			</div>
 			<div ng-messages="todoForm.todoName.$error" class="td-validation-container" ng-show="todoForm.todoName.$dirty || todoForm.$submitted">
-				<div ng-message="required" class="td-validation-message">TODO name is required.</div>
+				<div ng-message="required" class="td-validation-message high-shadow">
+					TODO name is required.
+				</div>
 			</div>
 		</form>
 		<ul class="td-list">
-			<li class="td-item-container" ng-repeat="item in todo.tasks">
-				{{ item.name }}
+			<li class="td-item-container high-shadow" ng-repeat="item in todo.tasks">
+				<input type="checkbox" ng-model="item.closed">
+				<span ng-class="{strike: item.closed}">
+					{{ item.name }}
+				</span>
+				<button type="button" class="td-button medium-shadow td-small" ng-click='todo.removeTodo($index)'>
+					Remove
+				</button>
 			</li>
 		</ul>
 	</div>
