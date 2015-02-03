@@ -1,4 +1,4 @@
 (function() {
 	"use strict;"
-	angular.module("MainApp", []);
+	angular.module("MainApp", ["app.todo"]);
 })();

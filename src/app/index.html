@@ -8,12 +8,23 @@
 <div class="td-container">
 	<h1>TODO</h1>
 	<div class="td-list-container" ng-controller="TodoCtrl as todo">
-		<span class="td-item-container" ng-repeat="for item in todo.tasks">
-			{{ todo.title }}
-		</span>
+		<form name="todoForm" class="td-list-form" novalidate ng-submit="todo.addTodo()">
+			<label>New todo</label>
+			<input required ng-model-options="{updateOn: 'blur'}" type="text" ng-model="todo.todoName" name="todoName"/>
+			<button type="submit">Add</button>
+			<div ng-messages="todoForm.todoName.$error" class="td-validation-container" ng-show="todoForm.todoName.$dirty || todoForm.$submitted">
+				<div ng-message="required" class="td-validation-message">TODO name is required.</div>
+			</div>
+		</form>
+		<ul class="td-list">
+			<li class="td-item-container" ng-repeat="item in todo.tasks">
+				{{ item.name }}
+			</li>
+		</ul>
 	</div>
 </div>
 <script type="text/javascript" src="../../bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="../../bower_components/ng-messages/angular-messages.min.js"></script>
 <script type="text/javascript" src="../js/app.bundle.min.js"></script>
 </body>
 </html>
