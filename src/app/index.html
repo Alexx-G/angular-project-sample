@@ -2,9 +2,17 @@
 <html>
 <head>
 	<title>This is a well structured AngularJS project.</title>
-	<link rel="stylesheet" type="text/css" href="../css/styles.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/styles.min.css"/>
 </head>
 <body ng-app="MainApp">
+<div class="td-container">
+	<h1>TODO</h1>
+	<div class="td-list-container" ng-controller="TodoCtrl as todo">
+		<span class="td-item-container" ng-repeat="for item in todo.tasks">
+			{{ todo.title }}
+		</span>
+	</div>
+</div>
 <script type="text/javascript" src="../../bower_components/angular/angular.min.js"></script>
 <script type="text/javascript" src="../js/app.bundle.min.js"></script>
 </body>
