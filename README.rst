@@ -123,6 +123,7 @@ Project structure
 ++++++++++++++++++
 
 In AngularJS mostly are used 2 approaches structuring files:
+
 1. By features - grouping the files related to one feature in one module (which can contains also other submodules).
 2. By functions - grouping the files by their type (all controllers goes to the module `controllers` etc.)
 
