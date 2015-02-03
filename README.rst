@@ -4,7 +4,54 @@ Example of AngularJS project structure.
 
 When I started with AngularJS, one of the principal question for me was - "How should I structure my project?". So, after more tries I found the best project layout for me.
 
-Set-up of environment.
+How to use?
+++++++++++++
+
+This project is just a skeleton for your application. So, just follow the next steps:
+
+1. Clone this project.
+   
+   `git clone git@github.com:Alexx-G/angular-project-sample.git`
+
+2. Open the project folder and install dependencies.
+   
+   `npm install`
+   `bower install`
+
+3. Build the project with *gulp*.
+   
+    `gulp build`
+
+You will obtain something like this:
+
+::
+
+    .
+    ├── bower_components
+    │   └── angular
+    ├── bower.json
+    ├── dist
+    │   ├── css
+    │   ├── js
+    │   └── views
+    ├── gulpfile.js
+    ├── LICENSE
+    ├── node_modules
+    │   ├── gulp
+    │   ├── gulp-concat
+    │   ├── gulp-minify-css
+    │   ├── gulp-minify-html
+    │   ├── gulp-ng-annotate
+    │   ├── gulp-sourcemaps
+    │   └── gulp-uglify
+    ├── package.json
+    ├── README.rst
+    └── src
+        ├── app
+        └── css
+
+
+Set-up the environment.
 +++++++++++++++++++++++
 
 0. You'll need `node <http://nodejs.org/>`_ and `npm <https://www.npmjs.com/>`_.
@@ -71,3 +118,9 @@ Well, because it's awesome. We can once configure what files we want to minify (
 
 After running a single *gulp* task I obtain release folder with my views, scripts and styles.
 You can find gulpfile in this repository (it's very simple) or check the documentation.
+
+TODO:
+++++++
+
+1. Add some features to the angular application.
+2. Add tests.
