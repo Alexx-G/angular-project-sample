@@ -119,8 +119,17 @@ Well, because it's awesome. We can once configure what files we want to minify (
 After running a single *gulp* task I obtain release folder with my views, scripts and styles.
 You can find gulpfile in this repository (it's very simple) or check the documentation.
 
+Project structure
+++++++++++++++++++
+
+In AngularJS mostly are used 2 approaches structuring files:
+1. By features - grouping the files related to one feature in one module (which can contains also other submodules).
+2. By functions - grouping the files by their type (all controllers goes to the module `controllers` etc.)
+
+Well, I prefer to use mixed approach - mostly per features, but if module is quite big, then I can group files by functions (controllers, services, routes etc.).
+
 TODO:
 ++++++
 
-1. Add some features to the angular application.
+1. *Add some features to the angular application.* [Done]
 2. Add tests.
